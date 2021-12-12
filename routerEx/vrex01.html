@@ -1,0 +1,94 @@
+<html>
+<head>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <style>
+
+      #app p a{
+         text-align: center;
+         font-size: medium;
+         margin-left: 25px;
+      }
+
+      #nav a.vue-link-temp {
+          color:#ca2bca
+      }
+
+      .home{
+        max-width: 1400px;
+        margin:0 auto;
+
+      }
+      .destinations{
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      img{
+        max-width: 600px;
+        height: auto;
+        max-height: 400px;
+        width: 100%;
+      }
+
+      .destination-detail{
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      p{
+        margin: 0 40px;
+        font-size: 20px;
+        text-align: left;
+
+      }
+
+      .cards{
+       justify-content: space-between;
+
+      }
+
+      .card {
+        display:block;
+        padding: 5px 10px 5px 10px;
+
+      }
+
+      .go-back{
+        display: flex;
+        cursor:pointer;
+
+      }
+      button{
+        border: 0;
+      }
+
+    </style>
+
+</head>
+<body>
+    <div id="app">
+      <nav-links></nav-links>
+        <!-- 使用 router-link 组件来导航. -->
+        <!-- 通过传入 `to` 属性指定链接. -->
+        <!-- <router-link> 默认会被渲染成一个 `<a>` 标签
+        <router-link to="/">Home</router-link>
+        <router-link to="/Brazil">Brazil</router-link>
+        <router-link to="/Hawaii">Hawaii</router-link>
+        <router-link to="/Jamaica">Jamaica</router-link>
+        <router-link to="/Panama">Panama</router-link>
+        <router-link to="/Panama2">Panama2</router-link>
+         -->
+         
+       
+      <!-- 路由出口 -->
+      <!-- 路由匹配到的组件将渲染在这里 -->
+      <router-view :key="$route.path"></router-view>
+    </div>
+
+  
+</body>  
+<script   type="module" src="vrex01.js"></script>
+</html>
