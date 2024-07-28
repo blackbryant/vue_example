@@ -1,5 +1,9 @@
 import axios from 'axios'
 
+/**
+ * 同步方式來抓取資料
+ * @returns
+ */
 async function GetRunoobData(){
   let data = {};
   //https://www.runoob.com/try/ajax/json_demo.json
